@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Page</title>
+<style>
+header{
+    color: black;
+    text-align: center
+}
+
+nav {
+    margin-left: 460px
+}
+.article1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 500px;
+    width: 125px;
+    border-top: 1px solid gray;
+    padding: 1em;
+    text-align: left;
+    display: inline-block;
+}
+.article2 {
+    font-size: 25px;
+    margin-top: 10px;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    width: 125px;
+    padding: 1em;
+    text-align: left;
+    display: inline-block;
+}
+
+section { 
+    text-align: center;
+    padding: 0,5em;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Welcome</h1>
+</header>
+<nav>
+  <%= link_to 'About', about_path %>
+  <%= link_to 'Home', root_path %>
+</nav>
+<section>
+  <%= link_to image_tag('HeaderHome.jpg'),'www.google.com'%>
+</section>
+
+<article class="article1" >London is the capital city of England.
+It is the most populous city in the United Kingdom, 
+with a metropolitan area of over 13 million inhabitants.
+</article >
+
+<article class="article2">London is the capital city of England.
+It is the most populous city in the United Kingdom, 
+with a metropolitan area of over 13 million inhabitants.
+</article>
+
+
+
+</body>
+</html>
