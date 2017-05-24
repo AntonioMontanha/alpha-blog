@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
-  
+    
   end
   
   def create
@@ -14,15 +14,11 @@ class SessionsController < ApplicationController
       flash.now[:danger] = "Email or password is not valid"
       render 'new'
     end
-    
   end
   
   def destroy
     session[:user_id] = nil
     flash[:success] = "You have logged out"
     redirect_to root_path
-    
   end
-
-  
 end
